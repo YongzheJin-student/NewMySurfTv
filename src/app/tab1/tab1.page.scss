@@ -1,0 +1,204 @@
+.back_image{
+    height: 70vh;
+    width: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+
+.main_content_div{
+    .main_btn_div{
+        padding: 20px;
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        height: 10vh;
+        padding-bottom: 0px;
+        
+        position: absolute;
+        z-index: 999;
+
+        .logo_img{
+            width: 30px;
+        }
+
+        ion-button{
+            color: white;
+            font-weight: 600;
+            margin: 0;
+            font-size: 14px;
+        }
+
+        .genres_btn{
+            font-weight: 500;
+        }
+    }
+
+    .flex_div{
+        position: absolute;
+        width: 100%;
+        bottom: -10px;
+        ion-col{
+            text-align: center;
+        }
+        .col_div{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            ion-icon{
+                font-size: 35px;
+            }
+
+            ion-button{
+                --border-radius: 5px;
+                --background: white;
+                color: blue;
+                font-weight: 600;
+
+                ion-icon{
+                    font-size: 30px;
+                }
+            }
+
+            ion-label {
+                font-size: 11px;
+            }
+        }
+    }
+
+    .bottom_div{
+        // padding: 0px 16px;
+        padding-bottom: 16px;
+
+        ion-label {
+            display: block;
+        }
+        
+        .top_10{
+            height: 28px;
+            width: 25px;
+            background: var(--ion-color-primary);
+            position: absolute;
+            right: 0;
+            top: 0;
+            font-weight: bold;
+
+            .top_lbl{
+                font-size: 10px;
+            }
+            .ten_lbl{
+                font-size: 14px;
+            }
+        }
+
+        .list_div2{
+            padding: 0px;
+
+            .slide_image{
+                height: 200px;
+                width: 100%;
+                // border-radius: 5px;
+                position: relative;
+            }
+            .head_lbl {
+                font-weight: 600;
+                margin-top: 15px;
+                margin-bottom: 16px;
+                font-size: 16px;
+                padding-left: 16px;
+            }
+            ion-button{
+                --border-radius: 3px;
+                font-weight: 600;
+                height: 40px;
+            }
+
+            .play_btn{
+                --background: white;
+                color: black;
+
+                ion-icon{
+                    font-size: 22px;
+                }
+            }
+
+            .list_btn{
+                --background: #202020;
+                ion-icon{
+                    font-size: 25px;
+                }
+            }
+        }
+
+        .list_div{
+            
+            padding-left: 16px;
+            padding-right: 16px;
+
+            ion-slide{
+                display: flex;
+                flex-direction: column;
+
+                .text_img{
+                    width: 70%;
+                    margin-top: -25px;
+                    height: 30px;
+                }
+                
+            }
+            .head_lbl {
+                font-weight: 600;
+                margin-top: 15px;
+                margin-bottom: 16px;
+                font-size: 16px;
+            }
+
+            .slide_back{
+                height: 100px;
+                width: 100px;
+                border-radius: 100%;
+            }
+
+            .slide_class{
+                margin-right: 7px;
+            }
+
+            .slide_image{
+                height: 140px;
+                width: 100%;
+                // border-radius: 5px;
+                position: relative;
+                .logo{
+                    width: 20px;
+                    position: absolute;
+                    left: 5px;
+                    top: 5px;
+                }
+
+                .video_div{
+                    height: 55px;
+                    width: 55px;
+                    border-radius: 100%;
+                    border: 2px solid white;
+                    background: rgba(0, 0, 0, 0.5);
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+                    transform: translate(-50%,-50%);
+
+                    ion-icon{
+                        font-size: 30px;
+                        left: 50%;
+                        top: 50%;
+                        position: absolute;
+                        transform: translate(-50%,-50%);
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,27 @@
+ion-input{
+    --background: white
+    ;
+    --border-radius: 0px;
+    --padding-start: 35px;
+    height: 50px;
+    --placeholder-color : black
+    ;
+
+    ion-icon{
+        color: blue;
+    }
+}
+.hes{
+    padding-top: 30px;
+    .search{
+    font-size: 20px;
+    position: absolute;
+    left: 8px;
+    }
+    .mic{
+        font-size: 22px;
+        position: absolute;
+        right: 8px;
+    }
+}
+
