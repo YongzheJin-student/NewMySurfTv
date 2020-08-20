@@ -20,28 +20,20 @@
       <div class="flex_div">
         <ion-grid fixed>
           <ion-row>
-            <ion-col size="4">
-              <div class="col_div">
-                <ion-icon slot="start" name="add"></ion-icon>
-                <ion-label>My List</ion-label>
-              </div>
-            </ion-col>
-            <ion-col size="4">
+            <ion-col size="6">
               <div class="col_div">
                 <ion-button (click)="onPlay()">
                   <ion-icon slot="start" name="caret-forward-outline"></ion-icon>
                   Play
                 </ion-button>
+              </div>
+            </ion-col>
+            <ion-col size="6">
+              <div class="col_div">
                 <ion-button (click)="onSave()">
                   <ion-icon slot="start" name="caret-forward-outline"></ion-icon>
                   Save
                 </ion-button>
-              </div>
-            </ion-col>
-            <ion-col size="4">
-              <div class="col_div">
-                <ion-icon name="alert-circle-outline"></ion-icon>
-                <ion-label>Info</ion-label>
               </div>
             </ion-col>
           </ion-row>
@@ -53,14 +45,19 @@
 
       <div class="list_div">
         <ion-label class="head_lbl">Recently</ion-label>
+          <div>
+            <ion-slides [options]="slideOpts">
+              <ion-slide *ngFor="let item of slider" (click)="details()">
+                <div class="slide_back bg_image" [style.border]="getColor(item.color)"
+                  [style.backgroundImage]="'url( '+ item.img +' )'"></div>
+                <img src="{{item.text}}" class="text_img">
+              </ion-slide>
+            </ion-slides>
+          </div>
       </div>
 
       <div class="list_div">
         <ion-label class="head_lbl">Popular</ion-label>
-      </div>
-
-      <div class="list_div">
-        <ion-label class="head_lbl">NETFLIX OROGINALS</ion-label>
         <div>
           <ion-slides [options]="slideOpts">
             <ion-slide class="slide_class" *ngFor="let item of shows" (click)="details()">
