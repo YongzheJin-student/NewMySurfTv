@@ -9,7 +9,11 @@ const routes: Routes = [
   {
     path: 'download',
     loadChildren: () => import('./download/download.module').then( m => m.DownloadPageModule)
+  },  {
+    path: 'video',
+    loadChildren: () => import('./video/video.module').then( m => m.VideoPageModule)
   }
+
 ];
 @NgModule({
   imports: [

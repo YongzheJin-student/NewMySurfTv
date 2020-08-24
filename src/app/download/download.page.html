@@ -3,18 +3,7 @@
     <ion-buttons slot="start">
       <ion-back-button mode="md"></ion-back-button>
     </ion-buttons>
-    <ion-title>Downloads</ion-title>
+    <ion-title>Download</ion-title>
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
-  <div class="main_content_div">
-    <ion-grid fixed>
-      <ion-row>
-        <ion-col size="4" *ngFor="let item of (shows | slice : 0 :8)">
-          <div class="back_image bg_image" [style.backgroundImage]="'url( '+ item.img +' )'"></div>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-  </div>
-</ion-content>

@@ -22,10 +22,10 @@ export class Tab1Page {
       this.shows = this.dummy.dummyData;
     }
   getColor(val) {
-    return '2.5px solid ' + val;
+    return '3.0px solid ' + val;
   }
   details() {
-    this.router.navigate(['video-detail']);
+    this.router.navigate(['video']);
   }
   
 }
