@@ -1,0 +1,28 @@
+.FUNCTS{
+    padding-left: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-right: 15px;
+    position: relative;
+
+    .Name{
+        font-weight: 600;
+        font-size: 18px;
+    }
+    .Introduction{
+        margin-top: 10px;
+        font-size: 13px; 
+    }
+    ion-col{
+        text-align: center;
+
+        ion-icon{
+            font-size: 20px;
+        }
+        ion-label {
+            font-size: 13px;
+            margin-top: 7px;
+        }
+    }
+}

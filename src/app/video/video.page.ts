@@ -6,9 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./video.page.scss'],
 })
 export class VideoPage implements OnInit {
-
-  constructor() { }
-
+  constructor() {}
   ngOnInit() {
   }
 
