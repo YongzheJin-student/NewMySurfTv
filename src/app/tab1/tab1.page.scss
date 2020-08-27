@@ -13,6 +13,18 @@
 }
 
 .main_content_div{
+    .menu_div{
+        position: absolute;
+        width: 100%;
+        top: -1px;
+        ion-label{
+            color:white;
+        }
+        img{
+            flex-direction: column;
+        }
+        
+    }
     .main_btn_div{
         padding: 20px;
         width: 100%;

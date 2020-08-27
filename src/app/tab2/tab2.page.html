@@ -1,14 +1,16 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
-    <div class="hes">
-      <ion-toolbar>
-        <ion-searchbar (ionInput)="FilterJSONData($event)">
-        </ion-searchbar>
-      </ion-toolbar>
-    </div>
+    <ion-buttons slot="start">
+      <ion-back-button mode="md"></ion-back-button>
+    </ion-buttons>
+    <ion-title>
+      Search
+    </ion-title>
   </ion-toolbar>
 </ion-header>
 <ion-content>
+  <ion-searchbar (ionInput)="FilterJSONData($event)">
+  </ion-searchbar>
   <div class="ion-padding">
     <ion-list>
       <ion-item (click)="selectval(item.name)" *ngFor="let item of jsonData">

@@ -1,31 +1,7 @@
 <div class="undertabs2222">
-  <ion-tabs (ionTabsDidChange)="Change($event)">
+  <ion-tabs>
 
     <ion-tab-bar slot="bottom">
-      <ion-tab-button tab="tab1">
-        <img *ngIf="val != 'tab1'" src="assets/tabs/home.png" alt="">
-        <img *ngIf="val == 'tab1'" src="assets/tabs/home_active.png" alt="">
-        <ion-label [class.active]="val == 'tab1'" >Home</ion-label>
-      </ion-tab-button>
-
-      <ion-tab-button tab="tab2">
-        <img *ngIf="val != 'tab2'" src="assets/tabs/search.png" alt="">
-        <img *ngIf="val == 'tab2'" src="assets/tabs/search_active.png" alt="">
-        <ion-label [class.active]="val == 'tab2'" >Search</ion-label>
-      </ion-tab-button>
-
-      <ion-tab-button tab="tab3">
-        <img *ngIf="val != 'tab3'" src="assets/tabs/video.png" alt="">
-        <img *ngIf="val == 'tab3'" src="assets/tabs/video_active.png" alt="">
-        <ion-label [class.active]="val == 'tab3'">Live</ion-label>
-      </ion-tab-button>
-
-      <ion-tab-button tab="download">
-        <img *ngIf="val != 'tab4'" src="assets/tabs/down.png" alt="">
-        <img *ngIf="val == 'tab4'" src="assets/tabs/down_active.png" alt="">
-        <ion-label [class.active]="val == 'download'">Downloads</ion-label>
-      </ion-tab-button>
-
     </ion-tab-bar>
 
   </ion-tabs>

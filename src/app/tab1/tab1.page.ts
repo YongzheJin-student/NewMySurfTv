@@ -23,9 +23,21 @@ export class Tab1Page {
     }
   getColor(val) {
     return '3.0px solid ' + val;
-  }
+  };
   details() {
     this.router.navigate(['video']);
-  }
+  };
+  searchurl() {
+    this.router.navigate(['tab2']);
+  };
+  homeurl() {
+    this.router.navigate(['tab1']);
+  };
+  liveurl() {
+    this.router.navigate(['tab3']);
+  };
+  downloadurl() {
+    this.router.navigate(['download']);
+  };
   
 }
