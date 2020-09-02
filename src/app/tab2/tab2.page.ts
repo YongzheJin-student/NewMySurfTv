@@ -25,11 +25,6 @@ export class Tab2Page {
     ];
   }
 
- 
-  selectval(val)
-  {
-    this.router.navigate(['video']);
-  }
 
   getItems(ev) {
     // Reset items back to all of the items
@@ -44,6 +39,11 @@ export class Tab2Page {
         return (item.toLowerCase().indexOf(val.toLowerCase()) > -1);
       })
     }
+  }
+
+  selectval(val)
+  {
+    this.router.navigate(['video']);
   }
   
 }
