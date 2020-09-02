@@ -1,0 +1,26 @@
+.Subscribe_content{
+    p{
+        background-color:rgba(255,255,255,0.5);
+        font-family:'Times New Roman', Times, serif;
+        color:black;
+        font-size:large;
+        font-style:bold;
+        text-align:center; //horizental center
+        vertical-align: middle; //vertial center
+        height:40px;
+        width:230px;
+        margin-left:20px;
+        
+    }
+    ion-button{
+        padding-left:70px;
+    }
+}
+.back_image{
+    height: 60vh;
+    width: 100%; 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
