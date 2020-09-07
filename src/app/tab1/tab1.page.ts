@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { DummyService } from '../dummy.service'
+import { DummyService } from '../dummy.service';
+
 
 @Component({
   selector: 'app-tab1',
@@ -11,6 +12,7 @@ export class Tab1Page {
   val
   slider: any[] = [];
   shows;
+  link;
   slideOpts = {
     slidesPerView: 3,
   };
@@ -24,8 +26,8 @@ export class Tab1Page {
   getColor(val) {
     return '3.0px solid ' + val;
   };
-  details() {
-    this.router.navigate(['video']);
+  details(link) {
+    this.router.navigate(['video'],{queryParams:{link}});
   };
   searchurl() {
     this.router.navigate(['tab2']);
