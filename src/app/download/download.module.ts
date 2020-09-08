@@ -1,20 +1,23 @@
-import { NgModule } from '@angular/core';
-import { CommonModule } from '@angular/common';
-import { FormsModule } from '@angular/forms';
+import { NgModule } from "@angular/core";
+import { CommonModule } from "@angular/common";
+import { FormsModule } from "@angular/forms";
 
-import { IonicModule } from '@ionic/angular';
+import { IonicModule } from "@ionic/angular";
 
-import { DownloadPageRoutingModule } from './download-routing.module';
+import { DownloadPageRoutingModule } from "./download-routing.module";
 
-import { DownloadPage } from './download.page';
-
+import { DownloadPage } from "./download.page";
+import { HttpClient } from "@angular/common/http";
+import { HttpClientModule } from "@angular/common/http";
 @NgModule({
   imports: [
     CommonModule,
     FormsModule,
     IonicModule,
-    DownloadPageRoutingModule
+    DownloadPageRoutingModule,
+    HttpClientModule
   ],
-  declarations: [DownloadPage]
+  declarations: [DownloadPage],
+  providers: [HttpClient]
 })
 export class DownloadPageModule {}

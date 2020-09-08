@@ -1,31 +1,55 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-buttons slot="start">
-      <ion-back-button mode="md"></ion-back-button>
-    </ion-buttons>
-    <ion-title>Subscribe</ion-title>
-  </ion-toolbar>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-back-button mode="md"></ion-back-button>
+        </ion-buttons>
+        <ion-title>Subscribe</ion-title>
+    </ion-toolbar>
 </ion-header>
 <ion-content>
-<div class="back_image" [style.backgroundImage]="'url(assets/imgs/home_back.jpg)'">
-  <div class="Subscribe_content">
-    <p>
-      Subscribe to mySurf.tv 
-    </p>
-    <p style="margin-top: 40px;">
-      Subscribe
-      <ion-icon name="checkbox"></ion-icon>
-    </p>
-    <p> 
-      Confirm your Email Address
-      <ion-icon name="checkbox"></ion-icon>
-    </p>
-    <p>
-      Get the latest surf videos
-      <ion-icon name="checkbox"></ion-icon>
-    </p>
-    <ion-button color="medium">Subscirbe</ion-button>
-  </div>
-</div>
-</ion-content>
+    <div class="back_image" [style.backgroundImage]="'url(assets/imgs/home_back.jpg)'">
+        <div class="Subscribe_content">
+            <p>
+                Subscribe to mySurf.tv
+            </p>
+            <p style="margin-top: 40px;">
+                Subscribe
+                <ion-icon name="checkbox"></ion-icon>
+            </p>
+            <p>
+                Confirm your Email Address
+                <ion-icon name="checkbox"></ion-icon>
+            </p>
+            <p>
+                Get the latest surf videos
+                <ion-icon name="checkbox"></ion-icon>
+            </p>
+            <!-- <ion-list> -->
+            <!-- <ion-item id="rounded">
+                <ion-label fixed>Email</ion-label>
+                <ion-input type="text" name="email" id="email" [(ngModel)]="email" value=""></ion-input>
+            </ion-item> -->
 
+            <!-- </ion-list> -->
+            <!-- <ion-button color="medium" (click)="subs()">Subscirbe</ion-button> -->
+
+            <div id="mc_embed_signup">
+                <form #form action="https://gmail.us17.list-manage.com/subscribe/post?u=44ed3bbb80691fd768bb95cdc&amp;id=993f95e69a" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+                    <div id="mc_embed_signup_scroll">
+                        <!-- <label for="mce-EMAIL">Subscribe</label> -->
+                        <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+                        <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_44ed3bbb80691fd768bb95cdc_993f95e69a" tabindex="-1" value=""></div>
+                        <div class="clear">
+                            <ion-button color="medium" (click)="form.submit()">Subscirbe</ion-button>
+                        </div>
+                        <!-- <div class="clear"><input type="submit" (click)="form.submit()" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div> -->
+                    </div>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+
+</ion-content>
