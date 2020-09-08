@@ -68,30 +68,6 @@
         }
         
 
-        .list_div2{
-            padding: 0px;
-
-            .slide_image{
-                height: 200px;
-                width: 100%;
-                // border-radius: 5px;
-                position: relative;
-            }
-            .head_lbl {
-                font-weight: 600;
-                margin-top: 15px;
-                margin-bottom: 16px;
-                font-size: 16px;
-                padding-left: 16px;
-            }
-            ion-button{
-                --border-radius: 3px;
-                font-weight: 600;
-                height: 40px;
-            }
-
-        }
-
         .list_div{
             
             padding-left: 16px;
@@ -104,7 +80,7 @@
                 .text_img{
                     width: 70%;
                     margin-top: -25px;
-                    height: 30px;
+                    height: 40px;
                 }
                 
             }
@@ -116,8 +92,8 @@
             }
 
             .slide_back{
-                height: 100px;
-                width: 100px;
+                height: 120px;
+                width: 120px;
                 border-radius: 100%;
             }
 

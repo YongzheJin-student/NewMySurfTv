@@ -6,27 +6,27 @@ import { Injectable } from '@angular/core';
 export class DummyService {
   dummyData = [
     {
-      img: 'assets/imgs/image1.jpeg',
+      img: 'assets/imgs/image1.jpg',
       name: 'Stranger Things',
     },
     {
-      img: 'assets/imgs/image2.jpeg',
+      img: 'assets/imgs/image2.jpg',
       name: 'Lucifer',
     },
     {
-      img: 'assets/imgs/image3.jpeg',
+      img: 'assets/imgs/image3.jpg',
       name: 'Dangal',
     },
     {
-      img: 'assets/imgs/image4.jpeg',
+      img: 'assets/imgs/image4.jpg',
       name: 'Kabir Singh',
     },
     {
-      img: 'assets/imgs/image5.jpeg',
+      img: 'assets/imgs/image5.jpg',
       name: 'Phanton',
     },
     {
-      img: 'assets/imgs/image6.jpeg',
+      img: 'assets/imgs/image6.jpg',
       name: 'Saaho',
     },
     {
@@ -99,7 +99,7 @@ export class DummyService {
       link: 'https://players.brightcove.net/1752604059001/VJCJXL3Ye_default/index.html?videoId=4093643993001'
     },
     {
-      img: 'assets/imgs/slide2.jpeg',
+      img: 'assets/imgs/slide2.jpg',
       color: '#1181d1',
       text: 'assets/imgs/text2.jpg',
       link: 'https://players.brightcove.net/1752604059001/VJCJXL3Ye_default/index.html?videoId=4093643993001'

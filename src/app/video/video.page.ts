@@ -9,13 +9,11 @@ import { DummyService } from '../dummy.service';
 })
 export class VideoPage implements OnInit {
   dataReceived:string;
-  slider: any[] = [];
   constructor(public activatedRoute:ActivatedRoute,private dummy: DummyService) {
     
     this.activatedRoute.queryParams.subscribe((data)=>{
         this.dataReceived = JSON.stringify(data);
     })
-    this.slider = this.dummy.slider;
   }
   ngOnInit() {
   }

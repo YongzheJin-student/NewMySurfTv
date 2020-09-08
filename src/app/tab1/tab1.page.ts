@@ -12,7 +12,7 @@ export class Tab1Page {
   val
   slider: any[] = [];
   shows;
-  link;
+  item;
   slideOpts = {
     slidesPerView: 3,
   };
