@@ -16,6 +16,9 @@ export class Tab1Page {
   slideOpts = {
     slidesPerView: 3,
   };
+  slideOpts2 = {
+    slidesPerView: 1,
+  };
   constructor(private router: Router,
   private dummy: DummyService,
   

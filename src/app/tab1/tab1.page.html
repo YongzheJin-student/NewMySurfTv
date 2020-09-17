@@ -45,7 +45,7 @@
               <div class="col_div">
                 <ion-button (click)="onSave()">
                   <ion-icon slot="start" name="caret-forward-outline"></ion-icon>
-                  save
+                  share
                 </ion-button>
               </div>
             </ion-col>
@@ -75,7 +75,7 @@
       <div class="list_div">
         <ion-label class="head_lbl">Popular</ion-label>
         <div>
-          <ion-slides [options]="slideOpts">
+          <ion-slides [options]="slideOpts2">
             <ion-slide class="slide_class" *ngFor="let item of shows" (click)="details()">
               <div class="slide_image2 bg_image" [style.backgroundImage]="'url( '+ item.img +' )'"></div>
             </ion-slide>
@@ -86,7 +86,7 @@
       <div class="list_div">
         <ion-label class="head_lbl">TV Shows</ion-label>
         <div>
-          <ion-slides [options]="slideOpts">
+          <ion-slides [options]="slideOpts2">
             <ion-slide class="slide_class" *ngFor="let item of shows" (click)="details()">
               <div class="slide_image bg_image" [style.backgroundImage]="'url( '+ item.img +' )'"></div>
             </ion-slide>
