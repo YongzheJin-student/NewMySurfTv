@@ -29,8 +29,8 @@ export class Tab1Page {
   getColor(val) {
     return '3.0px solid ' + val;
   };
-  details(link) {
-    this.router.navigate(['video'],{queryParams:{link}});
+  details() {
+    this.router.navigate(['video']);
   };
   searchurl() {
     this.router.navigate(['tab2']);

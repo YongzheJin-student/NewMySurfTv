@@ -59,16 +59,13 @@
       <div class="list_div">
         <ion-label class="head_lbl">Recently</ion-label>
           <div>
-            <form>
               <ion-slides [options]="slideOpts">
-                <ion-slide *ngFor="let item of slider" (click)="details(link)">
+                <ion-slide *ngFor="let item of slider" (click)="details()">
                     <div class="slide_back bg_image"
                       [style.backgroundImage]="'url( '+ item.img +' )'"></div>
                     <img src="{{item.text}}" class="text_img">
-                    <ion-input value="{{item.link}}" #link ></ion-input>
                   </ion-slide> 
               </ion-slides>
-          </form>
           </div>
       </div>
 
