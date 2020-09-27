@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 import { DummyService } from '../dummy.service';
-
+import { SocialSharing } from "@ionic-native/social-sharing/ngx";
 
 @Component({
   selector: 'app-tab1',
@@ -22,6 +22,7 @@ export class Tab1Page {
   };
   constructor(private router: Router,
   private dummy: DummyService,
+  private socialSharing: SocialSharing
   
     ) {
       this.slider = this.dummy.slider;
@@ -46,4 +47,10 @@ export class Tab1Page {
     this.router.navigate(['download']);
   };
   
+  shareClick(){
+
+  this.socialSharing.share("Look What I Found On This App Called mysurf.tv", 
+  "mysurf.tv", "", "https://www.mysurf.tv/");
+
+  }
 }
