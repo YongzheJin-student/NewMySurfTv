@@ -96,29 +96,34 @@ export class DummyService {
       img: 'assets/imgs/slide1.jpg',
       color: '#db2e3a',
       text: 'assets/imgs/text1.jpg',
+      id:"1",
       link: 'https://players.brightcove.net/1752604059001/VJCJXL3Ye_default/index.html?videoId=4093643993001'
     },
     {
       img: 'assets/imgs/slide2.jpg',
       color: '#1181d1',
       text: 'assets/imgs/text2.jpg',
+      id:"2",
       link: 'https://players.brightcove.net/1752604059001/VJCJXL3Ye_default/index.html?videoId=4093643993001'
     },
     {
       img: 'assets/imgs/slide3.jpg',
       color: '#14a84f',
+      id:"3",
       text: 'assets/imgs/text3.jpg',
       link: '???'
     },
     {
       img: 'assets/imgs/slide4.jpg',
       color: '#b9d624',
+      id:"4",
       text: 'assets/imgs/text4.jpg',
       link: '???'
     },
     {
       img: 'assets/imgs/slide5.jpg',
       color: '#287d4a',
+      id:"5",
       text: 'assets/imgs/text5.jpg',
       link: '???'
     },

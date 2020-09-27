@@ -64,7 +64,7 @@
                 <ion-slide *ngFor="let item of slider" (click)="details()">
                     <div class="slide_back bg_image"
                       [style.backgroundImage]="'url( '+ item.img +' )'"></div>
-                    <input type="number" [(ngModel)]="VideoID" id="VideoID" name="VideoID" value="1" >
+                    <input type="number" id="VideoID" name="VideoID" value="{{item.id}}" >
                     <button ion-button submit>View</button>
                   </ion-slide>
               </ion-slides>
