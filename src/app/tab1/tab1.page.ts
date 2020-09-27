@@ -9,7 +9,8 @@ import { DummyService } from '../dummy.service';
   styleUrls: ['tab1.page.scss']
 })
 export class Tab1Page {
-  val
+  VideoID:string="1";
+  val;
   slider: any[] = [];
   shows;
   item;
@@ -30,7 +31,7 @@ export class Tab1Page {
     return '3.0px solid ' + val;
   };
   details() {
-    this.router.navigate(['video']);
+    this.router.navigateByUrl('/video/{{VideoID}}');
   };
   searchurl() {
     this.router.navigate(['tab2']);

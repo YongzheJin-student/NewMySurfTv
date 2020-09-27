@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DummyService } from '../dummy.service';
+import {ActivatedRoute} from '@angular/router'
 
 @Component({
   selector: 'app-video',
@@ -7,9 +8,11 @@ import { DummyService } from '../dummy.service';
   styleUrls: ['./video.page.scss'],
 })
 export class VideoPage implements OnInit {
-  constructor() {
+  VideoID:string;
+  constructor(private route:ActivatedRoute) {
   }
   ngOnInit() {
+    this.VideoID=this.route.snapshot.paramMap.get("VideoID")
   }
 
 }

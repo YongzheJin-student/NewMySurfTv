@@ -15,7 +15,7 @@
         <ion-grid>
           <ion-row>
             <ion-col size="3">
-              <img src="assets/imgs/brand.png">
+              <img src="assets/imgs/brand.png" style="border-radius:100%">
             </ion-col>
             <ion-col size="3">
                 <ion-label (click)="searchurl()">Search</ion-label>
@@ -45,7 +45,7 @@
               <div class="col_div">
                 <ion-button (click)="onSave()">
                   <ion-icon slot="start" name="caret-forward-outline"></ion-icon>
-                  share
+                  Share
                 </ion-button>
               </div>
             </ion-col>
@@ -59,13 +59,16 @@
       <div class="list_div">
         <ion-label class="head_lbl">Recently</ion-label>
           <div>
+            <form (ngSubmit)="details()">
               <ion-slides [options]="slideOpts">
                 <ion-slide *ngFor="let item of slider" (click)="details()">
                     <div class="slide_back bg_image"
                       [style.backgroundImage]="'url( '+ item.img +' )'"></div>
-                    <img src="{{item.text}}" class="text_img">
-                  </ion-slide> 
+                    <input type="number" [(ngModel)]="VideoID" id="VideoID" name="VideoID" value="1" >
+                    <button ion-button submit>View</button>
+                  </ion-slide>
               </ion-slides>
+            </form> 
           </div>
       </div>
 
@@ -75,17 +78,19 @@
           <ion-slides [options]="slideOpts2">
             <ion-slide class="slide_class" *ngFor="let item of shows" (click)="details()">
               <div class="slide_image2 bg_image" [style.backgroundImage]="'url( '+ item.img +' )'"></div>
+              <button>View</button>
             </ion-slide>
           </ion-slides>
         </div>
       </div>
 
       <div class="list_div">
-        <ion-label class="head_lbl">TV Shows</ion-label>
+        <ion-label class="head_lbl">Recommand</ion-label>
         <div>
           <ion-slides [options]="slideOpts2">
             <ion-slide class="slide_class" *ngFor="let item of shows" (click)="details()">
               <div class="slide_image bg_image" [style.backgroundImage]="'url( '+ item.img +' )'"></div>
+              <button>View</button>
             </ion-slide>
           </ion-slides>
         </div>

@@ -11,7 +11,7 @@ const routes: Routes = [
     loadChildren: () => import('./download/download.module').then( m => m.DownloadPageModule)
   },
   {
-    path: 'video',
+    path: 'video/:videoID',
     loadChildren: () => import('./video/video.module').then( m => m.VideoPageModule)
   },
   {
